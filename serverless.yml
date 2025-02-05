@@ -13,6 +13,6 @@ functions:
   hello:
     handler: handler.hello
     events:
-      - httpApi:
-          path: /
+      -  http:
           method: get
+          path: /
