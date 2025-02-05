@@ -12,7 +12,7 @@ jobs:
       - name: Generate ZIP
         run: zip deployment.zip *.py
       - name: default deploy
-        users: appleboy/lambda-action@master
+        uses: appleboy/lambda-action@master
         with:
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
