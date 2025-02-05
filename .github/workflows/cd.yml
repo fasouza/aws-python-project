@@ -10,8 +10,7 @@ jobs:
       - name: checkout source code
         uses: actions/checkout@v2
       - name: Generate ZIP
-        run:
-        zip deployment.zip *.py
+        run: zip deployment.zip *.py
       - name: default deploy
         users: appleboy/lambda-action@master
         with:
